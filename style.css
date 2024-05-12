@@ -1,0 +1,206 @@
+
+.color-change {
+
+    background-color: rgb(250, 250, 109);
+    background-repeat:none; 
+    animation: change 10s infinite ease-in-out;
+
+}
+
+@keyframes change {
+
+0% 
+{
+
+
+background-color: rgb(250, 250, 109);
+
+}
+20% 
+{
+
+background-color: pink;    
+
+
+}
+40% 
+{
+
+ background-color: skyblue;   
+ 
+
+}
+
+60% 
+{
+    background-color: rgb(139, 255, 139);
+    
+
+}
+
+80% 
+{
+
+    background-color: rgb(250, 250, 109);
+
+}
+
+100% 
+{
+
+    background-color: pink;  
+
+}
+
+
+
+}
+
+
+.image-container {
+
+
+            background-image: url("1 1.png");
+            background-repeat:none; 
+            animation: img-change 10s infinite ease-in-out;
+
+
+}
+
+
+@keyframes img-change {
+
+    0% 
+    {
+    
+        background-image: url("1 1.png");
+    
+    }
+    20% 
+    {
+    
+        background-image: url("3 1.png");
+    
+    }
+     40% 
+    {
+    
+        background-image: url("4 1.png");
+    
+    }
+    60% 
+    {
+    
+        background-image: url("5 1.png");
+    
+    } 
+
+    80% 
+    {
+    
+        background-image: url("6 1.png");
+    
+    }
+
+    90% 
+    {
+    
+        background-image: url("7 1.png");
+    
+    }
+
+    100% 
+    {
+    
+        background-image: url("2 1.png");
+    
+    }
+
+    
+    }
+
+    
+
+    .baloon-translate {
+
+        animation: baloon 3s infinite ease;
+        transition: all .3s;
+}
+
+
+@keyframes baloon {
+
+    0% 
+        {
+
+       transform: translateY(0px);
+
+        }
+
+    50% 
+        {
+
+        transform: translateY(-30px);
+        
+
+        }
+
+    100% 
+        {
+
+            transform: translateY(0px);
+
+        }
+
+}
+
+.wish-translate {
+
+        animation: baloon 3s infinite ease;
+        transition: all .3s;
+}
+
+
+@keyframes baloon {
+
+    0% 
+        {
+
+       transform: translateY(0px);
+
+        }
+
+    50% 
+        {
+
+        transform: translateY(-30px);
+        
+
+        }
+
+    100% 
+        {
+
+            transform: translateY(0px);
+
+        }
+
+}
+
+.anim {
+
+    background-color: black;
+    animation: anim 10s infinite;
+}
+
+@keyframes anim {
+
+    0% {
+        width: 0%;
+    }
+
+    100% {
+
+        width: 100%;
+    }
+}

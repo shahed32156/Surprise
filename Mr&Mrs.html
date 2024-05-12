@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr & Mrs</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+<body class="bg-black">
+
+
+    <div class="flex justify-evenly hidden" id="bulb">
+  
+       <img class="h-[70px]" src="bulb_yellow.png" alt="">
+       <img class="h-[70px]" src="bulb_pink.png" alt="">
+       <img class="h-[70px]" src="bulb_blue.png" alt="">
+       <img class="h-[70px]" src="bulb_green.png" alt=""> 
+
+    </div>
+
+
+    <div class="baloon-translate flex gap-20 justify-center hidden mt-20" id="baloon">
+  
+        <img class="h-[70px]" src="b1.png" alt="">
+        <img class="h-[70px]" src="b2.png" alt="">
+        <img class="h-[70px]" src="b3.png" alt=""> 
+ 
+     </div>
+
+
+       <div class="wish-translate flex items-center justify-center hidden" id="msg">
+
+            <h1 class="text-white text-[20px] bg-gradient-to-r from-[tomato] to-purple-500 py-2 px-4 rounded-md text-center">Happy 11th Months Anniversary Jaaaaan <i class="fa-sharp fa-solid fa-heart text-pink-500"></i> </h1>
+
+       </div>
+
+
+
+       <div id="img" class="hidden image-container h-[300px] w-[400px] mx-auto rounded-lg"> </div>
+
+       <div id="animation" class="mt-2 hidden">
+          
+        <div class="bg-gray-200 w-[400px] h-[10px] rounded-full dark:bg-gray-700 mx-auto">
+            <div class="font-bold rounded-full h-[10px] anim"></div>
+        </div>
+
+        </div>
+
+
+        <audio class="loop-audio hidden" loop>
+            <source src="Tomake_Chai.mp3" type="audio/mpeg">
+            
+          </audio>
+
+
+
+    <div class="flex items-center justify-center mt-10">
+
+        
+        <button id="changeColorButton" class="play-button startConfetti bg-purple-500 md:hover:bg-[tomato] text-white font-bold py-2 px-4 rounded">
+            Light on/off
+          </button>
+
+    </div>
+ 
+  
+  
+  
+  
+<script src="script.js"></script>
+  <script src="confetti.js"></script>
+
+
+
+
+  <script>
+
+const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 4000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        start();
+            
+
+
+  </script>
+</body>
+</html>
